@@ -65,4 +65,5 @@ setTimeout(function (){
     document.getElementById('numbers').innerHTML = `hai indovinato ${guessed.length} numeri. Sono i seguenti ${guessed}`;
     }
     
+
 }, 6000)
