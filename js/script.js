@@ -28,4 +28,9 @@ let random_numbers = createArrayNumbers();
 console.log(random_numbers);
 
 //mostro a video, aggangiando id da html
-document.getElementById('numbers').innerHTML = random_numbers
+document.getElementById('numbers').innerHTML = random_numbers;
+
+setTimeout(function(){
+    document.getElementById('numbers').innerHTML = '';
+
+}, 30000);  
