@@ -33,4 +33,6 @@ document.getElementById('numbers').innerHTML = random_numbers;
 setTimeout(function(){
     document.getElementById('numbers').innerHTML = '';
 
-}, 30000);  
+    //permettere all'utente di inserire i suoi num
+    let num = prompt('inserisci il tuo num');
+}, 3000);  
