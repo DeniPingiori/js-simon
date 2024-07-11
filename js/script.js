@@ -33,13 +33,18 @@ document.getElementById('numbers').innerHTML = random_numbers;
 setTimeout(function(){
     document.getElementById('numbers').innerHTML = '';
 
+    
+}, 3000);  
+
+//setTimeout in cui permettiamo all'utente di inserire i num e facciamo mostare il risultato
+setTimeout(function (){
     //creo array vuoto per i num inseriti dall'user
     let user_numbers = [];
 
     //ciclo di 5 ripetizioni in cui vado a mostare ad ogni iterazione il prompt di inserimento
     for (let i = 0; i <5; i++) {
     //permettere all'utente di inserire i suoi num
-    user_numbers.push.(prompt('inserisci il tuo num'));
+    user_numbers.push(prompt('inserisci il tuo num'));
     }
 
     //array di num individuati
@@ -50,7 +55,8 @@ setTimeout(function(){
             guessed.push(user_numbers[i]);
         }
     }
+    //mostro i num indovinati
+    document.getElementById('numbers').innerHTML = `hai indovinato ${guessed.length} numeri. Sono i seguenti ${guessed}`;
 
 
-
-}, 3000);  
+}, 6000)
